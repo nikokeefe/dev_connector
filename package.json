@@ -2,9 +2,10 @@
 	"name": "dev_connector",
 	"version": "1.0.0",
 	"description": "Social network for developers",
-	"main": "index.js",
+	"main": "server.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "node server",
+		"server": "nodemon server"
 	},
 	"repository": {
 		"type": "git",
