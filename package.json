@@ -1,19 +1,33 @@
 {
-  "name": "dev_connnector",
-  "version": "1.0.0",
-  "description": "Social network for developers",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nikokeefe/dev_connector.git"
-  },
-  "author": "Nik O'Keefe",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nikokeefe/dev_connector/issues"
-  },
-  "homepage": "https://github.com/nikokeefe/dev_connector#readme"
+	"name": "dev_connector",
+	"version": "1.0.0",
+	"description": "Social network for developers",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nikokeefe/dev_connector.git"
+	},
+	"author": "Nik O'Keefe",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/nikokeefe/dev_connector/issues"
+	},
+	"homepage": "https://github.com/nikokeefe/dev_connector#readme",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"config": "^3.2.2",
+		"express": "^4.17.1",
+		"express-validator": "^6.2.0",
+		"gravatar": "^1.8.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.6.13",
+		"request": "^2.88.0"
+	},
+	"devDependencies": {
+		"concurrently": "^4.1.2",
+		"nodemon": "^1.19.2"
+	}
 }
