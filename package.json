@@ -1,0 +1,19 @@
+{
+  "name": "dev_connnector",
+  "version": "1.0.0",
+  "description": "Social network for developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikokeefe/dev_connector.git"
+  },
+  "author": "Nik O'Keefe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikokeefe/dev_connector/issues"
+  },
+  "homepage": "https://github.com/nikokeefe/dev_connector#readme"
+}
