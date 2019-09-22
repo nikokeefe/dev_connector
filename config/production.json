@@ -1,0 +1,7 @@
+{
+	"mongoURI3": "mongodb+srv://nikwillok:nikwillok@devconnector-efkrr.mongodb.net/test?retryWrites=true&w=majority",
+	"mongoURI2": "mongodb://nikwillok:nikwillok@devconnector-shard-00-00-efkrr.mongodb.net:27017,devconnector-shard-00-01-efkrr.mongodb.net:27017,devconnector-shard-00-02-efkrr.mongodb.net:27017/test?ssl=true&replicaSet=DevConnector-shard-0&authSource=admin&retryWrites=true&w=majority",
+	"jwtSecret": "shhhhhhhh",
+	"githubClientId": "dbc86c8c09e7f18fac21",
+	"githubSecret": "e112548b2cf4719ccd2e3798097ef69d9e7133d0"
+}
