@@ -11,7 +11,7 @@ import {
 	GET_REPOS
 } from './types';
 
-// Get current user profile
+// Get current users profile
 export const getCurrentProfile = () => async dispatch => {
 	try {
 		const response = await axios.get('/api/profile/me');
@@ -55,10 +55,8 @@ export const getProfiles = () => async dispatch => {
 
 // Get profile by Id
 export const getProfileById = userId => async dispatch => {
-	dispatch({ type: CLEAR_PROFILE });
-
 	try {
-		const response = await axios.get(`/api/profile/${userId}`);
+		const response = await axios.get(`/api/profile/user/${userId}`);
 
 		dispatch({
 			type: GET_PROFILE,
@@ -263,7 +261,7 @@ export const deleteEducation = id => async dispatch => {
 export const deleteAccount = id => async dispatch => {
 	if (window.confirm('Are you sure? This can NOT be undone!')) {
 		try {
-			const response = await axios.delete(`/api/profile`);
+			await axios.delete(`/api/profile`);
 
 			dispatch({ type: CLEAR_PROFILE });
 			dispatch({ type: ACCOUNT_DELETED });

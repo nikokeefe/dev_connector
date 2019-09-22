@@ -42,10 +42,8 @@ const AddEducation = ({ addEducation, history }) => {
 			<form
 				className='form'
 				onSubmit={e => {
-					{
-						e.preventDefault();
-						addEducation(formData, history);
-					}
+					e.preventDefault();
+					addEducation(formData, history);
 				}}
 			>
 				<div className='form-group'>
@@ -122,9 +120,9 @@ const AddEducation = ({ addEducation, history }) => {
 					></textarea>
 				</div>
 				<input type='submit' className='btn btn-primary my-1' />
-				<a className='btn my-1' href='dashboard.html'>
+				<Link className='btn my-1' to='/dashboard'>
 					Go Back
-				</a>
+				</Link>
 			</form>
 		</Fragment>
 	);
@@ -137,4 +135,4 @@ AddEducation.propTypes = {
 export default connect(
 	null,
 	{ addEducation }
-)(AddEducation);
+)(withRouter(AddEducation));

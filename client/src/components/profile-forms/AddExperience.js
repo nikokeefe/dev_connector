@@ -34,10 +34,8 @@ const AddExperience = ({ addExperience, history }) => {
 			<form
 				className='form'
 				onSubmit={e => {
-					{
-						e.preventDefault();
-						addExperience(formData, history);
-					}
+					e.preventDefault();
+					addExperience(formData, history);
 				}}
 			>
 				<div className='form-group'>
@@ -114,9 +112,9 @@ const AddExperience = ({ addExperience, history }) => {
 					></textarea>
 				</div>
 				<input type='submit' className='btn btn-primary my-1' />
-				<a className='btn my-1' href='dashboard.html'>
+				<Link className='btn my-1' to='/dashboard'>
 					Go Back
-				</a>
+				</Link>
 			</form>
 		</Fragment>
 	);
@@ -129,4 +127,4 @@ AddExperience.propTypes = {
 export default connect(
 	null,
 	{ addExperience }
-)(AddExperience);
+)(withRouter(AddExperience));
